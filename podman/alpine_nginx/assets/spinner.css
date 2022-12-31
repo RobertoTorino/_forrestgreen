@@ -1,0 +1,49 @@
+#html-spinner {
+    width: 200px;
+    height: 200px;
+    border: 16px solid #793BE5FF;
+    border-top: 16px solid #ADA5D9FF;
+    border-radius: 50%;
+}
+
+#html-spinnerII {
+    width: 200px;
+    height: 200px;
+    border: 16px solid #793BE5FF;
+    border-top: 16px solid #ADA5D9FF;
+    border-radius: 50%;
+}
+
+
+#html-spinnerII {
+    transition-property: transform;
+    animation-name: rotate;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#html-spinner {
+    transition-property: transform;
+    animation-name: rotate;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#svg-spinner {
+    transition-property: transform;
+    animation-name: rotate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

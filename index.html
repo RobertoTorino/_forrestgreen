@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--metadata-->
+    <title>Forrest &copy Philip aka RobertoTorino</title>
+    <meta charSet="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta http-equiv="content-Type" content="text/html; charset=iso-8859-1">
+    <meta name="forrest" content="width=device-width, initial-scale=1">
+
+    <!--do not copy message-->
+    <script>
+        document.addEventListener('copy', function (e) {
+            e.clipboardData.setData('text/plain', 'copy not possible');
+            e.clipboardData.setData('text/html', 'copy not possible');
+            e.clipboardData.setData('text/uri-list', 'copy not possible');
+            e.clipboardData.setData('text/css', 'copy not possible');
+            e.clipboardData.setData('image/jpeg', 'copy not possible');
+            e.clipboardData.setData('image/png', 'copy not possible');
+            e.clipboardData.setData('text/javascript', 'copy not possible');
+            e.clipboardData.setData('video/mp4', 'copy not possible');
+            e.clipboardData.setData('audio/mpeg', 'copy not possible');
+            e.clipboardData.setData('audio/wav', 'copy not possible');
+            e.preventDefault();
+        });
+    </script>
+
+    <!--favicons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_package_forrest/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_package_forrest/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_package_forrest/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon_package_forrest/site.webmanifest">
+    <link rel="mask-icon" href="images/favicon_package_forrest/safari-pinned-tab.svg" color="#00A300">
+    <meta name="msapplication-TileColor" content="#00A300">
+    <meta name="theme-color" content="#FFFFFF">
+
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+
+    <!--local stylesheets-->
+    <link rel="stylesheet" href="assets/_index-forrest.css" media="screen">
+
+    <!--online stylesheets-->
+    <!--tested on following browsers: build-in intelij, chrome, firefox, safari, opera, yandex, edge-->
+    <!--none-->
+
+    <!--offline javascript functions-->
+    <!--none-->
+
+    <!--online javascript functions-->
+    <!--none-->
+</head>
+
+<!--glowing circle-->
+<div class="glow">
+    <div class="media" onclick="window.location.href=`forrestgreen.html`" target="_blank"
+         style="font-size: 2.5vw; font-family: 'Raleway', sans-serif; font-weight: bolder;">
+        discover the forrest
+    </div>
+</div>
+<!--end glowing circle-->
+
+<!--audio controls-->
+<sound class="sound">
+    <sound onclick="document.getElementsByTagName('audio')[0].play();">on</sound>
+    <sound onclick="document.getElementsByTagName('audio')[0].pause();">off</sound>
+    <audio controls autoplay loop hidden>
+        <source src="assets/sounds/forrest.mp3" type="audio/mpeg">
+        your browser does not support audio
+    </audio>
+</sound>
+<!--end audio controls-->
+
+<!--start footer-->
+<footer id="footer">
+    <p class="copyright" style="position: inherit; color: white;">&copy 2023 Philip aka RobertoTorino</p>
+</footer>
+<!--end footer-->
+
+</html>

@@ -1,0 +1,146 @@
+@media (prefers-color-scheme: dark) {
+    :root {
+        --main: white;
+        --main-bg: black;
+        --font-size: 25px;
+        --light-color-scheme: light;
+    }
+
+    h2 {
+        text-shadow: 1px 1px 2px black, 0 0 25px white, 0 0 5px white;
+        text-align: center;
+        color: #fff;
+        font-family: "Arial Rounded MT Bold", Arial, serif;
+    }
+
+    .centerTheme {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 25px;
+    }
+
+    .fixedCenter {
+        position: center;
+        top: 25px;
+        padding-top: 25px;
+        padding-bottom: 50px;
+    }
+
+    .toolTip .toolTipText {
+        font-size: 16px;
+        font-family: "Arial Rounded MT Bold", Arial, serif;
+        visibility: hidden;
+        background-color: #545454FF;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        position: center;
+        padding: 6px 10px;
+        z-index: 1;
+    }
+
+    .toolTip:hover .toolTipText {
+        visibility: visible;
+    }
+
+    .floatedMenu {
+        position: sticky;
+        top: 0;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    .column {
+        float: left;
+        justify-content: center;
+        width: 15%;
+        padding-left: 100px;
+        padding-top: 20px;
+    }
+
+    .column2 {
+        float: left;
+        justify-content: center;
+        width: 15%;
+        padding-left: 50px;
+        padding-top: 20px;
+    }
+
+    body {
+        color: white;
+        padding-top: 50px;
+        background-color: black;
+        font-size: 25px;
+        font-family: "Arial Rounded MT Bold", Arial, serif;
+    }
+
+    .light-mode {
+        background-color: white;
+        color: black;
+    }
+
+    .middle {
+        transition: .5s ease-in-out;
+        opacity: 0;
+        position: center;
+        top: 50%;
+        transform: translate(-20%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .textIcons {
+        border-radius: 20px;
+        background-color: #6D5A83FF;
+        color: white;
+        font-size: 16px;
+        font-family: "Arial Rounded MT Bold", Arial, serif;
+        padding: 6px 8px;
+    }
+
+    .container:hover .image {
+        opacity: 0.2;
+    }
+
+    .container:hover .middle {
+        opacity: 2;
+    }
+
+    p.text {
+        padding-left: 50px;
+        text-align: center;
+    }
+
+    body {
+        color: #ccc;
+        padding: 1px;
+        background-color: #222;
+        font-size: 25px;
+        font-family: "Arial Rounded MT Bold", Arial, serif;
+    }
+
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 50%;
+    }
+
+    .tsd-theme-toggle {
+        padding-top: 0.75rem;
+    }
+
+    .tsd-theme-toggle > h4 {
+        display: inline;
+        vertical-align: middle;
+        margin-right: 0.75rem;
+    } {
+}
+    .nav-bar {
+        width: 100%;
+        border-bottom: 1px solid rgba(255, 255, 255, .25);
+    }
+}

@@ -1,0 +1,103 @@
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    user-select: none;
+}
+
+i:link, i:visited, i:hover, i:active {
+    text-decoration: none;
+}
+
+.social {
+    text-align: center;
+}
+
+.social > i {
+    box-shadow: 0 0 5pt 3pt #E7E1D2FF;
+    background-color: #E7E1D2FF;
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #E7E1D2FF;
+    margin: 0 8px;
+    color: inherit;
+    opacity: 0.75;
+    cursor: pointer;
+}
+
+.social > i:hover {
+    opacity: 0.5;
+}
+
+.media {
+    text-align: center;
+    cursor: pointer;
+}
+
+.media > i {
+    box-shadow: 0 0 5pt 3pt #E7E1D2FF;
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #E7E1D2FF;
+    margin: 0 8px;
+    color: inherit;
+    opacity: 0.75;
+    cursor: pointer;
+}
+
+.media > i:hover {
+    opacity: 0.5;
+}
+
+.copyright {
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-rendering: auto;
+    text-decoration: none;
+    color: #E7E1D2FF;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    font-size: 12px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
+}
+
+.container {
+    text-decoration: none;
+    margin-top: 20px;
+    position: initial;
+    text-align: center;
+    color: #E7E1D2FF;
+}
+
+.container > div {
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
+    color: #E7E1D2FF;
+    display: unset;
+    zoom: 1;
+    width: 33%;
+    cursor: pointer;
+}
+
+.footer {
+    position: absolute;
+    bottom: 150px;
+    width: 100%;
+    height: 2.5rem;
+}

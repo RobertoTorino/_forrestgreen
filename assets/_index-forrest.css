@@ -1,0 +1,142 @@
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+    user-select: none;
+}
+
+body {
+    display: flex;
+    font-family: 'Raleway', sans-serif;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(-45deg, #000000FF, #05752FFF, #000000FF, #000000FF, #000000FF);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+/*to get a more fluent color overlap*/
+@keyframes Animation {
+    0% {
+        background-position: 10% 0
+    }
+    50% {
+        background-position: 91% 100%
+    }
+    100% {
+        background-position: 10% 0
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 10% 0
+    }
+    50% {
+        background-position: 91% 100%
+    }
+    100% {
+        background-position: 10% 0
+    }
+}
+
+div {
+    position: relative;
+    width: 30vw;
+    height: 30vw;
+    line-height: 30vw;
+    text-align: center;
+    color: #252B37FF;
+    background-color: #000000FF;
+    border-radius: 50%;
+    animation: textColor 10s ease infinite;
+    box-shadow: 0 12px 16px 0 rgb(15, 255, 193), 0 17px 50px 0 rgb(7, 230, 99);
+}
+
+div:after {
+    position: absolute;
+    content: "";
+    top: 5vw;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 105%;
+    width: 100%;
+    margin: auto;
+    transform: scale(0.75);
+    filter: blur(5vw);
+    background: linear-gradient(270deg, #0FFFC1FF, #07E663FF);
+    background-size: 200% 200%;
+    animation: animateGlow 10s ease infinite;
+}
+
+@keyframes animationGlow {
+    0% {
+        background-position: 10% 0
+    }
+    50% {
+        background-position: 91% 100%
+    }
+    100% {
+        background-position: 10% 0
+    }
+}
+
+@keyframes textColor {
+    0% {
+        color: #07E663FF;
+    }
+    50% {
+        color: #05752FFF;
+    }
+    100% {
+        color: #07E663FF;
+    }
+}
+
+.glow {
+    font-size: 80px;
+    color: #FFFFFFFF;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+.sound {
+    position: unset;
+    width: 50px;
+    height: 50px;
+    padding-top: 300px;
+    border-radius: 50%;
+    color: rgb(5, 117, 47);
+    font-size: 24px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #545454;
+}
+
+.media {
+    text-align: center;
+    padding-bottom: 25px;
+    cursor: pointer;
+}
+
+#footer {
+    position: absolute;
+    padding-left: 10px;
+    bottom: 50px;
+    width: 100%;
+    height: 1rem;
+}
