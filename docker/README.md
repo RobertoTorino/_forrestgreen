@@ -2,11 +2,12 @@
 
 ### Running through Docker
 
-I used an [alpine](https://www.alpinelinux.org/) image here because of its small footprint compared to all other distro's. But from what I read around the Globe it has some drawbacks which prevents devs from
-using Alpine Linux in production environments. Most heard drawback are the DNS resolver issues. These issues are due to a bug in musl.
+I used an [Alpine Linux](https://www.alpinelinux.org/) image here because of its small footprint compared to all other distros.         
+But from what I read around the Globe it has some drawbacks which prevent devs from using Alpine Linux in production environments.      
+The most heard drawback is the DNS resolver issues. These issues are due to a bug in musl.      
 
 **Configuration of your Docker file, it uses a very small Alpine Linux image.**
-**Place a Docker.file in root of your project with this content (off course you can adjust everything to your own settings):**                
+**Place the Docker.file in the root of your project with this content (of course you can adjust everything to your settings):**                
 
 ```
 FROM docker.io/library/alpine:latest
