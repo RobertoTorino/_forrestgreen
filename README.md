@@ -14,14 +14,14 @@
 > - **[Yandex](https://browser.yandex.com/?from=morda_icon_yandex_com&banerid=3401000000)**
 > - **[Microsoft Edge](https://www.microsoft.com/en-us/edge?exp=e501&form=MA13FJ)**
 
-
 > **[youtube showcase](https://www.youtube.com/watch?v=p3b5E6xKjRI)**
-
 
 ### Info
 
 **Project to show how to implement some media attributes and visualizations for a static website using mostly css and html.**
 **Also, a brief explanation on how to build a docker container for this static website and run this locally.**
+
+**To build the Docker or Podman container automated, just run the following shell script: ./docker-build.sh**
 
 ### Page One (index.html) main elements
 

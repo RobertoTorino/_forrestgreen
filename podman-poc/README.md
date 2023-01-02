@@ -45,9 +45,9 @@
 ### get the list of dependent child images
 
 ```shell
-for i in $(podman images -q)
+for i in $(podman-poc images -q)
 do
-podman history -q $i | grep -q dc6170bc6b8b && podman images | grep $i
+podman-poc history -q $i | grep -q dc6170bc6b8b && podman-poc images | grep $i
 done | sort -u
 ```
 
@@ -55,7 +55,7 @@ done | sort -u
 
 
 ```shell
-git clone https://github.com/RobertoTorino/podman-sample.git && cd podman-sample/alpine_nginx
+git clone https://github.com/RobertoTorino/podman-sample.git && cd podman-poc-sample/alpine_nginx
 ```
 
 > **[podman on GitHub click here](https://github.com/containers/podman)**
