@@ -8,7 +8,7 @@ then
   mkdir -p "$DIR" && chmod -R 755 "$DIR"
 fi
 
-URL=$"http://localhost:8890"
+URL=$"http://localhost:8895"
 process_id=$!
 DATE=$(date +"%Y-%m-%dT%H:%M:%S")
 
@@ -35,7 +35,7 @@ docker build -t forrestgreen:latest -f Dockerfile .
 echo "new alpine image build"
 wait $process_id
 
-docker run -dt --name forrestgreen_app -p 8890:80 forrestgreen:latest
+docker run -dt --name forrestgreen_app -p 8895:80 forrestgreen:latest
 echo "running new container now"
 wait $process_id
 
