@@ -16,26 +16,26 @@ DATE=$(date +"%Y-%m-%dT%H:%M:%S")
 exec > >(tee -i logs/"$DATE"-image-build.log)
 exec 2>&1
 
-docker stop forrestgreen_app
+podman stop forrestgreen_app
 echo "container stopped"
 wait $process_id
 
-docker rm forrestgreen_app
+podman rm forrestgreen_app
 wait $process_id
 echo "container removed"
 
-docker rmi alpine
+podman rmi alpine
 wait $process_id
 
-docker rmi forrestgreen
+podman rmi forrestgreen
 wait $process_id
 echo "alpine images removed"
 
-docker build -t forrestgreen:latest -f Dockerfile .
+podman build -f Dockerfile.pm --format docker -t forrestgreen:latest .
 echo "new alpine image build"
 wait $process_id
 
-docker run -dt --name forrestgreen_app -p 8890:80 forrestgreen:latest
+podman run -dt --name forrestgreen_app -p 8890:80 forrestgreen:latest
 echo "running new container now"
 wait $process_id
 

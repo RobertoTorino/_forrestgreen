@@ -2,7 +2,7 @@
 
 ### Running Nginx and config
 
-The nginx conf file used here is a little tweaked, the `sendfile` is disabled to avoid caching and volume mount issues.
+The default nginx conf file is edited, `sendfile` is disabled to prevent caching and volume mount problems.
 
 
 | Description                       | Command(s)                 | Info                                         |

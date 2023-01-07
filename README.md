@@ -108,6 +108,9 @@ As a pure container, the div element does not inherently represent anything. Ins
 The class global attribute is a space-separated list of the case-sensitive classes of the element. Classes allow CSS and Javascript to select and access specific elements via the class selectors  or functions like the DOM method document.getElementsByClassName.
 Though the specification doesn't put requirements on the name of classes, web developers are encouraged to use names that describe the semantic purpose of the element, rather than the presentation of the element. For example, attribute to describe an attribute rather than italics, although an element of this class may be presented by italics. Semantic names remain logical even if the presentation of the page changes.
 ---
+**span**                        
+The span HTML element is a generic inline container for phrasing content, which does not inherently represent anything. It can be used to group elements for styling purposes (using the class or id attributes), or because they share attribute values, such as lang. It should be used only when no other semantic element is appropriate. span is very much like a div element, but div is a block-level element  whereas a span is an inline element.
+---
 **style**           
 The style global attribute contains CSS styling declarations to be applied to the element. Note that it is recommended for styles to be defined in a separate file or files. This attribute and the style element have mainly the purpose of allowing for quick styling, for example for testing purposes.
 Usage note: This attribute must not be used to convey semantic information. Even if all styling is removed, a page should remain semantically correct. Typically, it shouldn't be used to hide irrelevant information; this should be done using the hidden attribute.
@@ -170,4 +173,3 @@ The :focus CSS pseudo-class represents an element (such as a form input) that ha
 **active**          
 The :active CSS pseudo-class represents an element (such as a button) that is being activated by the user. When using a mouse, "activation" typically starts when the user presses down the primary mouse button.
 ---
-
