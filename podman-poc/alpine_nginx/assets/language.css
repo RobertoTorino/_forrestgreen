@@ -115,6 +115,7 @@
     }
 
     body {
+        display: flex;
         color: #ccc;
         padding: 1px;
         background-color: #222;

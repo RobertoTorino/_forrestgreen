@@ -27,8 +27,8 @@ body {
 .content {
     position: fixed;
     bottom: 0;
-    background: rgb(2, 7, 8);
-    color: #020708;
+    background: rgb(3, 2, 1);
+    color: #030201FF;
     width: 100%;
     /*padding: 20px;*/
 }

@@ -4,7 +4,14 @@ a, a:hover, a:focus, a:active {
     color: inherit;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 html, body {
+    background-image: url('../assets/video/ReadyPlayerMe-Avatar2.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 100%;
     width: auto;
     overflow: hidden; /* Hide scrollbars */
@@ -42,36 +49,36 @@ body {
     text-rendering: auto;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(-30deg, #000000FF, #545454FF, #000000FF, #000000FF, #000000FF);
-    background-size: 400% 400%;
+    /*background: linear-gradient(-30deg, #000000FF, #545454FF, #000000FF, #000000FF, #000000FF);*/
+    /*background-size: 400% 400%;*/
     animation: gradient 15s ease infinite;
     user-select: none;
 }
 
 /*to get a more fluent color overlap*/
-@keyframes Animation {
-    0% {
-        background-position: 9% 0
-    }
-    50% {
-        background-position: 89% 100%
-    }
-    100% {
-        background-position: 12% 0
-    }
-}
+/*@keyframes Animation {*/
+/*    0% {*/
+/*        background-position: 9% 0*/
+/*    }*/
+/*    50% {*/
+/*        background-position: 89% 100%*/
+/*    }*/
+/*    100% {*/
+/*        background-position: 12% 0*/
+/*    }*/
+/*}*/
 
-@keyframes gradient {
-    0% {
-        background-position: 9% 0
-    }
-    50% {
-        background-position: 89% 100%
-    }
-    100% {
-        background-position: 12% 0
-    }
-}
+/*@keyframes gradient {*/
+/*    0% {*/
+/*        background-position: 9% 0*/
+/*    }*/
+/*    50% {*/
+/*        background-position: 89% 100%*/
+/*    }*/
+/*    100% {*/
+/*        background-position: 12% 0*/
+/*    }*/
+/*}*/
 
 div:after {
     position: absolute;
@@ -83,9 +90,9 @@ div:after {
     height: 105%;
     width: 100%;
     margin: auto;
-    transform: scale(0.75);
+
     filter: blur(5vw);
-    background-size: 200% 200%;
+    background-size: 100% 200%;
     animation: animateGlow 10s ease infinite;
 }
 

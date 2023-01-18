@@ -1,29 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"
+      class="js-focus-visible" data-js-focus-visible="">
 <head>
+
     <!--metadata-->
-    <title>Forrest &copy Philip aka RobertoTorino</title>
+    <title>thanks elric</title>
     <meta charSet="UTF-8">
     <meta http-equiv="x-ua-compatible" content="IE=edge">
     <meta http-equiv="content-Type" content="text/html; charset=iso-8859-1">
-    <meta name="forrest" content="width=device-width, initial-scale=1">
-
-    <!--do not copy message-->
-    <script>
-        document.addEventListener('copy', function (e) {
-            e.clipboardData.setData('text/plain', 'copy not possible');
-            e.clipboardData.setData('text/html', 'copy not possible');
-            e.clipboardData.setData('text/uri-list', 'copy not possible');
-            e.clipboardData.setData('text/css', 'copy not possible');
-            e.clipboardData.setData('image/jpeg', 'copy not possible');
-            e.clipboardData.setData('image/png', 'copy not possible');
-            e.clipboardData.setData('text/javascript', 'copy not possible');
-            e.clipboardData.setData('video/mp4', 'copy not possible');
-            e.clipboardData.setData('audio/mpeg', 'copy not possible');
-            e.clipboardData.setData('audio/wav', 'copy not possible');
-            e.preventDefault();
-        });
-    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
     <!--favicons-->
     <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_package_forrest/apple-touch-icon.png">
@@ -40,33 +25,83 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
 
     <!--local stylesheets-->
-    <link rel="stylesheet" href="assets/_index-forrest.css" media="screen">
-</head>
+    <link rel="stylesheet" href="assets/_index-forrest.css">
 
+    <script type="module" src="https://modelviewer.dev/node_modules/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+
+    <script>
+        self.ModelViewerElement = self.ModelViewerElement || {};
+        self.ModelViewerElement.meshoptDecoderLocation = 'https://unpkg.com/meshoptimizer/meshopt_decoder.js';
+    </script>
+
+
+</head>
+<body>
 <!--glowing circle-->
 <div class="glow">
+
+
+
     <div class="media" onclick="window.location.href=`forrestgreen.html`" target="_blank"
-         style="font-size: 2.5vw; font-family: 'Raleway', sans-serif; font-weight: bolder;">
-        discover the forrest
+         style="font-size: 5vw; font-family: 'Raleway', sans-serif;">
+        &nbsp;Thanks Elric!
+
+
+        <model-viewer id="scale" alt="image" controls camera-controls auto-rotate touch-action="pan-x"
+                      src="../assets/video/elric.glb" style="height: 35vw; width: 35vw; left: 20vw; margin-top: -37vw">
+        </model-viewer>
+
     </div>
 </div>
-<!--end glowing circle-->
+<!--<model-viewer camera-controls touch-action="pan-y"-->
+<!--              src="../assets/video/elric.glb"-->
+<!--              controls-->
+<!--              auto-rotate-->
+<!--              camera-controls>-->
+<!--</model-viewer>-->
+
+
+<script>
+    const reportedDpr = document.querySelector('#reportedDpr');
+    const minimumDpr = document.querySelector('#minimumDpr');
+    const pixelWidth = document.querySelector('#pixelWidth');
+    const pixelHeight = document.querySelector('#pixelHeight');
+    const reason = document.querySelector('#reason');
+
+    document.querySelector('#scale').addEventListener('render-scale', (event) => {
+        reportedDpr.textContent = event.detail.reportedDpr;
+        minimumDpr.textContent = event.detail.minimumDpr;
+        pixelWidth.textContent = event.detail.pixelWidth;
+        pixelHeight.textContent = event.detail.pixelHeight;
+        reason.textContent = event.detail.reason;
+    });
+
+    const setup = () => {
+        const minScale = document.querySelector('#min-scale-value');
+        const ModelViewerStatic = customElements.get('model-viewer');
+
+        document.querySelector('#min-scale').addEventListener('input', (event) => {
+            ModelViewerStatic.minimumRenderScale = event.target.value;
+            minScale.textContent = event.target.value;
+        });
+    };
+
+    customElements.whenDefined('model-viewer').then(setup);
+</script>
+
 
 <!--audio controls-->
-<sound class="sound">
-    <sound onclick="document.getElementsByTagName('audio')[0].play();">on</sound>
-    <sound onclick="document.getElementsByTagName('audio')[0].pause();">off</sound>
-    <audio controls autoplay loop hidden>
-        <source src="assets/sounds/forrest.mp3" type="audio/mpeg">
-        your browser does not support audio
-    </audio>
-</sound>
+
+<sound onclick="document.getElementsByTagName('audio')[0].play();"></sound>
+<sound onclick="document.getElementsByTagName('audio')[0].pause();"></sound>
+<audio controls autoplay loop hidden>
+    <source src="assets/sounds/forrest.mp3" type="audio/mpeg">
+    your browser does not support audio
+</audio>
+
 <!--end audio controls-->
-
-<!--start footer-->
-<footer id="footer">
-    <p class="copyright" style="position: inherit; color: white;">&copy 2023 Philip aka RobertoTorino</p>
-</footer>
-<!--end footer-->
-
+</body>
 </html>

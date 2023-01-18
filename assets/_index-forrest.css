@@ -1,142 +1,148 @@
-a, a:hover, a:focus, a:active {
-    text-decoration: none;
-    color: inherit;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-html, body {
-    margin: 0 auto;
-    height: 100%;
-    width: auto;
-    user-select: none;
-}
-
-body {
-    display: flex;
-    font-family: 'Raleway', sans-serif;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(-45deg, #000000FF, #05752FFF, #000000FF, #000000FF, #000000FF);
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
-}
-
-/*to get a more fluent color overlap*/
-@keyframes Animation {
-    0% {
-        background-position: 10% 0
+@media (prefers-color-scheme: dark) {
+    a, a:hover, a:focus, a:active {
+        text-decoration: none;
+        color: inherit;
     }
-    50% {
-        background-position: 91% 100%
-    }
-    100% {
-        background-position: 10% 0
-    }
-}
 
-@keyframes gradient {
-    0% {
-        background-position: 10% 0
+    html, body {
+        align-items: center;
+        animation: gradient 15s ease infinite;
+        display: flex;
+        font-family: 'Raleway', sans-serif;
+        height: 100%;
+        justify-content: center;
+        margin: 0 auto;
+        overflow: hidden;
+        user-select: none;
+        width: auto;
     }
-    50% {
-        background-position: 91% 100%
+
+    body {
+        background: linear-gradient(-45deg, #030201FF, #05752FFF, #030201FF, #030201FF, #030201FF);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+        user-select: none;
+        overflow: hidden;
     }
-    100% {
-        background-position: 10% 0
+
+    @keyframes Animation {
+        0% {
+            background-position: 10% 0
+        }
+        50% {
+            background-position: 91% 100%
+        }
+        100% {
+            background-position: 10% 0
+        }
     }
-}
 
-div {
-    position: relative;
-    width: 30vw;
-    height: 30vw;
-    line-height: 30vw;
-    text-align: center;
-    color: #252B37FF;
-    background-color: #000000FF;
-    border-radius: 50%;
-    animation: textColor 10s ease infinite;
-    box-shadow: 0 12px 16px 0 rgb(15, 255, 193), 0 17px 50px 0 rgb(7, 230, 99);
-}
-
-div:after {
-    position: absolute;
-    content: "";
-    top: 5vw;
-    left: 0;
-    right: 0;
-    z-index: -1;
-    height: 105%;
-    width: 100%;
-    margin: auto;
-    transform: scale(0.75);
-    filter: blur(5vw);
-    background: linear-gradient(270deg, #0FFFC1FF, #07E663FF);
-    background-size: 200% 200%;
-    animation: animateGlow 10s ease infinite;
-}
-
-@keyframes animationGlow {
-    0% {
-        background-position: 10% 0
+    @keyframes gradient {
+        0% {
+            background-position: 10% 0
+        }
+        50% {
+            background-position: 91% 100%
+        }
+        100% {
+            background-position: 10% 0
+        }
     }
-    50% {
-        background-position: 91% 100%
+
+    div {
+        position: absolute;
+        width: 40vw;
+        height: 40vw;
+        text-align: left;
+        color: #252B37FF;
+        line-height: 40vw;
+        /*background-color: #030201FF;*/
+        border-radius: 50%;
+        animation: textColor 10s ease infinite;
+        background: linear-gradient(to right, rgb(3, 2, 1) 0%, rgb(3, 2, 1) 30%, #030201 10%, transparent 110%);
+        box-shadow: 0.105vw 0.105vw 0.262vw rgb(15, 255, 193), 0.525vw 0.525vw 0.787vw rgb(7, 230, 99), -0.052vw -0.052vw 1.575vw rgb(15, 255, 193);
+        /*box-shadow: 0 0.63vw 0.84vw 0 rgb(15, 255, 193), 0 0.892vw 2.625vw 0 rgb(7, 230, 99);*/
+        /*box-shadow: 0 0.63vw 0.84vw 0 rgb(15, 255, 193), 0 0.892vw 2.625vw 0 rgb(7, 230, 99);*/
     }
-    100% {
-        background-position: 10% 0
+
+    div:after {
+        content: "";
+        top: 5vw;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        height: 45vw;
+        width: 40vw;
+        margin: auto;
+        transform: scale(0.75);
+        filter: blur(5vw);
+        background: linear-gradient(to right, rgb(15, 255, 193) 0%, rgb(15, 255, 193) 30%, #07e663 10%, transparent 110%);
+        /*background: linear-gradient(270deg, #0FFFC1FF, #07E663FF);*/
+        background-size: 200% 200%;
+        animation: animateGlow 10s ease infinite;
     }
-}
 
-@keyframes textColor {
-    0% {
-        color: #07E663FF;
+    @keyframes animationGlow {
+        0% {
+            background-position: 10% 0
+        }
+        50% {
+            background-position: 91% 100%
+        }
+        100% {
+            background-position: 10% 0
+        }
     }
-    50% {
-        color: #05752FFF;
+
+    @keyframes textColor {
+        0% {
+            color: #07E663FF;
+        }
+        50% {
+            color: #05752FFF;
+        }
+        100% {
+            color: #07E663FF;
+        }
     }
-    100% {
-        color: #07E663FF;
+
+    .glow {
+        color: white;
+        animation: glow 1s ease-in-out infinite alternate;
     }
-}
 
-.glow {
-    font-size: 80px;
-    color: #FFFFFFFF;
-    text-align: center;
-    animation: glow 1s ease-in-out infinite alternate;
-}
+    .evergreenCircleLink {
+        cursor: pointer;
+        font-family: 'Raleway', sans-serif;
+        font-size: 20vw;
+        text-rendering: auto;
+    }
 
-.sound {
-    position: unset;
-    width: 50px;
-    height: 50px;
-    padding-top: 300px;
-    border-radius: 50%;
-    color: rgb(5, 117, 47);
-    font-size: 24px;
-    font-family: 'Raleway', sans-serif;
-    font-weight: bolder;
-    cursor: pointer;
-}
+    .sound {
+        display: flex;
+        justify-content: center;
+        margin-left: 52vw;
+        position: absolute;
+        cursor: pointer;
+        color: rgb(5, 117, 47);
+        font-size: 2vw;
+        font-family: 'Raleway', sans-serif;
+        font-weight: bolder;
+        padding-top: 15.748vw;
+        text-rendering: auto;
+    }
 
-.button:hover {
-    background-color: #545454;
-}
+    .copyright {
+        margin-top: 36vw;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        color: gray;
+        font-family: 'Raleway', sans-serif;
+        font-size: 2vw;
+        text-rendering: auto;
+        text-decoration: none;
+    }
 
-.media {
-    text-align: center;
-    padding-bottom: 25px;
-    cursor: pointer;
-}
 
-#footer {
-    position: absolute;
-    padding-left: 10px;
-    bottom: 50px;
-    width: 100%;
-    height: 1rem;
 }
