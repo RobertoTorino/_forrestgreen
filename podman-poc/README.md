@@ -15,7 +15,7 @@
 | run podman:                                         | podman machine init                                                       |      |
 | start podman:                                       | podman machine start                                                      |      |
 | version info:                                       | podman version                                                            |      |
-|                                                     |                                                                           |      |
+| podman stop                                         | podman machine stop                                                       |      |
 | create podman image:                                | podman build -f Dockerfile.pm --format docker -t forrestgreen-pm:latest . |      |
 | create a podman container:                          | podman run -dt -p 9999:80 forrestgreen-pm:latest                          |      |
 | check running containers:                           | podman ps -a                                                              |      |

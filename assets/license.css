@@ -9,7 +9,7 @@ a, a:hover, a:focus, a:active {
 }
 
 html, body {
-    background-image: url('../assets/video/ReadyPlayerMe-Avatar2.jpeg');
+/*    background-image: url('../assets/video/ReadyPlayerMe-Avatar2.jpeg');*/
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
@@ -27,7 +27,7 @@ h1 {
     color: white;
     font-family: 'Raleway', sans-serif;
     font-optical-sizing: auto;
-    font-size: 40px;
+    font-size: 2.251vw;
 }
 
 p {
@@ -90,7 +90,6 @@ div:after {
     height: 105%;
     width: 100%;
     margin: auto;
-
     filter: blur(5vw);
     background-size: 100% 200%;
     animation: animateGlow 10s ease infinite;
@@ -161,10 +160,10 @@ i:link, i:visited, i:hover, i:active {
 .social > i {
     box-shadow: 0 0 5pt 3pt white;
     background-color: white;
-    font-size: 24px;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
+    font-size: 1.351vw;
+    width: 2.251vw;
+    height: 2.251vw;
+    line-height: 2.251vw;
     display: inline-block;
     text-align: center;
     border-radius: 50%;
@@ -186,10 +185,10 @@ i:link, i:visited, i:hover, i:active {
 
 .media > i {
     box-shadow: 0 0 5pt 3pt white;
-    font-size: 24px;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
+    font-size: 1.351vw;
+    width: 2.251vw;
+    height: 2.251vw;
+    line-height: 2.251vw;
     display: inline-block;
     text-align: center;
     border-radius: 50%;
@@ -227,7 +226,7 @@ a.tooltip span {
     z-index: 1;
     border: 1px solid white;
     border-radius: 6px;
-    background: #000000FF;
+    background: white;
     visibility: hidden;
     opacity: 0;
     transition: all 1s ease-out 0s;
@@ -241,7 +240,7 @@ a.tooltip span {
     border: 1px solid #E7E1D2FF;
     border-radius: 6px;
     background: #525151;
-    color: rgb(231, 225, 210);
+    color: white;
     text-align: center;
     text-rendering: auto;
     font-size: 16px;
