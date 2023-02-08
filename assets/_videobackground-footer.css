@@ -47,12 +47,13 @@ i:link, i:visited, i:hover, i:active {
 }
 
 .copyright {
+    position: absolute;
     display: block;
     width: 100%;
     text-align: center;
     text-rendering: auto;
     text-decoration: none;
-    color: #E7E1D2FF;
+    color: white;
     padding-top: 0.844vw;
     padding-bottom: 0.563vw;
     font-size: 0.675vw;

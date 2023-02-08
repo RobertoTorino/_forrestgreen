@@ -53,7 +53,7 @@
         position: absolute;
         width: 40vw;
         height: 40vw;
-        text-align: left;
+        text-align: center;
         color: #252B37FF;
         line-height: 40vw;
         /*background-color: #030201FF;*/
@@ -119,9 +119,12 @@
     }
 
     .sound {
+        position: unset;
         display: flex;
-        justify-content: center;
-        margin-left: 52vw;
+        width: 0.5vw;
+        height: 0.5vw;
+        justify-content: right;
+        margin-left: 5vw;
         position: absolute;
         cursor: pointer;
         color: rgb(5, 117, 47);
@@ -144,5 +147,9 @@
         text-decoration: none;
     }
 
-
+    .media {
+        text-align: center;
+        padding-bottom: 0;
+        cursor: pointer;
+    }
 }
